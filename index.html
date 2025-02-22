@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +8,27 @@
 </head>
 
 <body>
-    <div class="container">
-        <h2>Iniciar Sesion</h2>
-        <form>
-            <input type="text">
-            <input type="text">
-            <button type="submit">Ingresar</button>
-        </form>
-        <div class="crearCuenta">
-            <p>¿No tienes una cuenta? <a href="#">Crear una cuenta</a></p>
-        </div>
-        <div class="imagen">
+    <div class="navigation">
+        <h1>TecApp</h1>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Perfil</a></li>
+            <li><a href="">Acerca de</a></li>
+        </ul>
+    </div>
 
-        </div>
+    <div class="login-container">
+        <form class="login-form" id="loginForm">
+            <h3>Bienvenido!!!</h3>
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Ingresar</button>
+            <p>¿Aún no tiene una cuenta? <a href="#">Registrarse</a></p>
+        </form>
     </div>
 </body>
+</html>
